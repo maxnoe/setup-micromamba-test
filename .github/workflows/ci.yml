@@ -1,0 +1,21 @@
+name: CI
+on: ["push", "pull_request", "workflow_dispatch"]
+
+jobs:
+  tests:
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        # We need login shells (-l) for micromamba to work.
+        shell: bash -leo pipefail {0}
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: mamba setup
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: environment.yml
