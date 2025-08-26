@@ -22,22 +22,22 @@ dependencies:
   - numpy>=1.24
   - numpydoc
   - pandas
-  # - pypandoc
-  # - pre-commit
-  # - psutil
-  # - pyirf
-  # - pytables
-  # - pytest
-  # - pytest-cov
-  # - pytest-runner
-  # - pytest-astropy-header
-  # - pyyaml
-  # - scikit-learn
-  # - scipy
-  # - setuptools
-  # - sphinx
-  # - sphinx-gallery
-  # - sphinx-automodapi
+  - pypandoc
+  - pre-commit
+  - psutil
+  - pyirf
+  - pytables
+  - pytest
+  - pytest-cov
+  - pytest-runner
+  - pytest-astropy-header
+  - pyyaml
+  - scikit-learn
+  - scipy
+  - setuptools
+  - sphinx
+  - sphinx-gallery
+  - sphinx-automodapi
   # - pydata-sphinx-theme
   # - sphinx-design
   # - sphinxcontrib-bibtex
